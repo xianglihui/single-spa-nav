@@ -5,14 +5,14 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "start:dev": "webpack-dev-server --env.standalone"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "single-spa-vue": "^2.4.0",
+    "single-spa-vue": "^2.4.1",
     "systemjs-webpack-interop": "^2.3.7",
-    "vue": "^2.6.11",
-    "vue-router": "^3.5.2"
+    "vue": "^2.6.11"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -21,8 +21,16 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "file-loader": "^6.2.0",
+    "path": "^0.12.7",
+    "standalone-single-spa-webpack-plugin": "^2.0.2",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
     "vue-cli-plugin-single-spa": "^2.2.0",
-    "vue-template-compiler": "^2.6.11"
+    "vue-loader": "^15.9.7",
+    "vue-template-compiler": "^2.6.11",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.2"
   },
   "eslintConfig": {
     "root": true,
