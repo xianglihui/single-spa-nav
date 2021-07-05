@@ -8,6 +8,7 @@ module.exports = {
   //注意路径别写错
   output: {
     path: path.join(__dirname, "./dist"),
+    libraryTarget: "system",
     filename: "bundle.js",
   },
   devServer: {

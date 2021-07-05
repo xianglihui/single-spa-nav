@@ -2,11 +2,14 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+    Test 3
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+
+console.log('hi there 2')
 
 export default {
   name: 'App',
