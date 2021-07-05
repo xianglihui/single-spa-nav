@@ -4,20 +4,22 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const {VueLoaderPlugin} = require("vue-loader")
 var path = require("path");
 module.exports = {
-  entry: path.join(__dirname, "./src/main.js"),
+  entry: path.resolve(__dirname, "./src/main.js"),
   //注意路径别写错
   output: {
-    path: path.join(__dirname, "./dist"),
+    path: path.resolve(__dirname, "./dist"),
     libraryTarget: "system",
-    filename: "bundle.js",
+    filename: "[name].js",
   },
+  devtool:"sourcemap",
   devServer: {
     // Not required, but it's often useful to run webpack-dev-server in SPA mode
     historyApiFallback: true,
     open: true, // 自动打开浏览器
     compress: true, // 启动gzip压缩
     port: 3000, // 端口号
-    quiet: true,
+    // quiet: true,
+    disableHostCheck:true
   },
   module: {
     rules: [
